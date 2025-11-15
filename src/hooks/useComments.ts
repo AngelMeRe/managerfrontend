@@ -1,6 +1,6 @@
 //hooks para obtener, crear y borrar comentarios
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { fetchCommentsByTask, addComment, deleteComment, type Comment } from '../api/comments';
+import { fetchCommentsByTask, addComment, deleteComment } from '../api/comments';
 
 
 //obtener comentarios de una tarea

@@ -36,7 +36,7 @@ export default function TaskEdit(){
       description: data.description,
       status: data.status,
       dueDate: data.dueDate.slice(0,10),
-      assignedToId: data.assignedToId
+      assignedToId: data.assignedTo?.id ?? 0
     });
     setQ(data.assignedTo?.name ?? '');
   }}, [data]);
